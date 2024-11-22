@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: darkkhaki;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            background-color: aquamarine;
+            border-radius: 50%;
+            animation-name: snake;
+            animation-direction: normal;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:200px;
+            height:200px;
+            border-radius: 50%;
+            background-color: aliceblue;
+        }
+        .child{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: brown;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color:greenyellow;
+        }
+        @keyframes snake{
+            from{
+                transform:rotate(o);
+            }
+            to{
+                transform:rotate(360deg)
+            }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="child">
+                <p></p>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
